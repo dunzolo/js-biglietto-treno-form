@@ -12,3 +12,5 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
         ALTRIMENTI
             il prezzo del biglietto non viene scontato
 4 - Stampo il prezzo del biglietto con due cifre decimali
+5 - Quando premo il pulsante 'Genera' bisogna visualizzare le informazioni del biglietto precedentemente calcolate
+6 - Quando premo il pulsante 'Annulla', ricarico la pagina per permettere di nuovo l'inserimento dei dati

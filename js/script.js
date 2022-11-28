@@ -1,9 +1,14 @@
+let name_user;
 let km_user;
 let age_user;
 let price_km;
-let button = document.getElementById('get-data');
+let button_Get_Data = document.getElementById('get-data');
+let button_Cancel_Data = document.getElementById('cancel-data');
 
-button.addEventListener('click', function(){
+button_Get_Data.addEventListener('click', function(){
+    name_user = document.getElementById('name-user').value;
+    console.log('Nome utente: ' + name_user);
+
     km_user = document.getElementById('km-user').value;
     console.log('Km: ' + km_user);
 
@@ -24,7 +29,16 @@ button.addEventListener('click', function(){
     else{
         console.log('Prezzo scontato: ' + price_km);
     }
-    
+
+    document.getElementById('ticket').classList.add('block');
+    document.getElementById('ticket').classList.remove('none');
+
+    document.getElementById('name-user-text').innerHTML = name_user;
+    document.getElementById('price-km-text').innerHTML = price_km + '€';
+})
+
+button_Cancel_Data.addEventListener('click', function(){
+    window.location.reload(true);
 })
 
 
