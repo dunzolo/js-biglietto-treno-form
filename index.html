@@ -9,59 +9,61 @@
         <title>Prezzo biglietto</title>
     </head>
     <body>
-        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        <div class="container text-center mt-5">
-            <div class="row">
-                <div class="col-4">
-                    <h3>Nome Cognome</h3>
-                    <input type="text" id="name-user" name="name-user" value="">
-                </div>
-                <div class="col-4">
-                    <h3>Km da percorrere</h3>
-                    <input type="text" id="km-user" name="km-user" value="">
-                </div>
-                <div class="col-4">
-                    <h3>Fascia et&agrave;</h3>
-                    <select id="age-user" name="age-user">
-                        <option value="Minorenne">Minorenne</option>
-                        <option value="Maggiorenne">Maggiorenne</option>
-                        <option value="Over 65">Over 65</option>
-                    </select>
+        <main>
+            <h1 class="text-center text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <div class="container text-center mt-5 card">
+                <div class="row">
+                    <div class="col-4">
+                        <h3 class="text-danger">Nome Cognome</h3>
+                        <input type="text" id="name-user" name="name-user" value="">
+                    </div>
+                    <div class="col-4">
+                        <h3 class="text-danger">Km da percorrere</h3>
+                        <input type="text" id="km-user" name="km-user" value="">
+                    </div>
+                    <div class="col-4">
+                        <h3 class="text-danger">Fascia et&agrave;</h3>
+                        <select id="age-user" name="age-user">
+                            <option value="Minorenne">Minorenne</option>
+                            <option value="Maggiorenne">Maggiorenne</option>
+                            <option value="Over 65">Over 65</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-100 p-5">
-                        <button id="get-data">Genera</button>
-                        <button id="cancel-data">Annulla</button>
+                        <button id="get-data" class="btn btn-danger bg-light text-danger">Genera</button>
+                        <button id="cancel-data" class="btn btn-danger bg-light text-danger">Annulla</button>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="ticket" class="none container mt-3">
-            <h1>IL TUO BIGLIETTO</h1>
-            <div class="row">
-                <h2>DETTAGLIO PASSEGGERI</h2>
-                <div class="col-4 border-black">
-                    <p>NOME PASSEGGERO</p>
-                    <p id="name-user-text"></p>
-                </div>
-                <div class="col-2 border-black">
-                    <p>Offerta</p>
-                    <p>Biglietto standard</p>
-                </div>
-                <div class="col-2 border-black">
-                    <p>Carrozza</p>
-                    <p>5</p>
-                </div>
-                <div class="col-2 border-black">
-                    <p>Codice CP</p>
-                    <p>92911</p>
-                </div>
-                <div class="col-2 border-black">
-                    <p>Costo biglietto</p>
-                    <p id="price-km-text"></p>
+            <div id="ticket" class="none container mt-3 p-5">
+                <h1 class="text-white text-center">IL TUO BIGLIETTO</h1>
+                <div class="row bg-white">
+                    <h2 class="fw-bold">DETTAGLIO PASSEGGERI</h2>
+                    <div class="col-4 bg-secondary fw-bold">
+                        <p>NOME PASSEGGERO</p>
+                        <p id="name-user-text"></p>
+                    </div>
+                    <div class="col-2">
+                        <p class="fw-bold">Offerta</p>
+                        <p>Biglietto standard</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="fw-bold">Carrozza</p>
+                        <p>5</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="fw-bold">Codice CP</p>
+                        <p>92911</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="fw-bold">Costo biglietto</p>
+                        <p id="price-km-text"></p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
         <script type="text/javascript" src="./js/script.js"></script>
     </body>
 </html>

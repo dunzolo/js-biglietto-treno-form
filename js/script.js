@@ -40,5 +40,3 @@ button_Get_Data.addEventListener('click', function(){
 button_Cancel_Data.addEventListener('click', function(){
     window.location.reload(true);
 })
-
-
